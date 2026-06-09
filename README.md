@@ -38,7 +38,7 @@
 
 ```bash
 # プロジェクトディレクトリに移動
-cd /Users/211601aok/Desktop/vsc/vscc/minhaya
+cd haya
 
 # 依存関係のインストール（自動実行）
 # Denoは必要なパッケージを自動でダウンロードします

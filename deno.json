@@ -1,0 +1,30 @@
+{
+  "tasks": {
+    "build": "deno run -A ./build.ts",
+    "build-watch": "deno run -A --watch=./src/ ./build.ts",
+    "run": "deno task build && deno run -A ./main.ts"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2"
+  },
+  "imports": {
+    "events": "npm:events@^3.3.0",
+    "preact": "npm:preact@10.26.4",
+    "preact/hooks": "npm:preact@10.26.4/hooks",
+    "preact/jsx-runtime": "npm:preact@10.26.4/jsx-runtime",
+    "preact-router": "npm:preact-router@4.1.2",
+    "browser-image-compression": "npm:browser-image-compression"
+  },
+  "nodeModulesDir": "auto",
+  "compilerOptions": {
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "deno.ns"
+    ],
+    "jsxFactory": "h",
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+    "strict": true
+  }
+}
